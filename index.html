@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML dan CSS</title>
+  </head>
+
+  <!-- CSS
+    1. Tag
+    2. Class
+    3. Id
+    4. Inline Style
+  -->
+
+  <style>
+    body {
+      background-color: rgb(190, 181, 181);
+    }
+    h1 {
+      color: green;
+    }
+    p {
+      color: green !important;
+    }
+    p.paragraf {
+      background-color: blue;
+    }
+    p.paragraf#detail {
+      background-color: transparent;
+    }
+    .paragraf {
+      /* padding-left: 50px; */
+
+      /* untuk semua atas bawah kanan kiri*/
+      /* padding: 20px; */
+
+      /* atas kanan bawah kiri*/
+      /* padding: 50px 50px 50px 50px; */
+
+      /* atas-bawah kiri-kanan*/
+      padding: 50px 10px;
+      color: red;
+    }
+    #detail {
+      border: 1px solid red;
+      padding: 100px;
+    }
+
+    .box p {
+      background-color: yellow;
+    }
+  </style>
+
+  <body>
+    <h1>Judul 1</h1>
+    <!-- Tentang deskripsi -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nemo
+      ullam porro odio at earum doloribus voluptate iure voluptatum mollitia
+      suscipit, delectus consectetur saepe aperiam non commodi officiis est
+      explicabo?
+    </p>
+    <p class="paragraf">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vitae
+      aliquam, voluptatibus obcaecati aut quibusdam adipisci magnam. Ullam,
+      eveniet atque! Fugit maxime quasi, exercitationem at quae veritatis
+      eligendi possimus modi illum nesciunt voluptate dicta cumque quisquam
+      minima animi eius consectetur sequi totam accusamus? Repudiandae id
+      numquam fugit explicabo cumque tempora!
+    </p>
+    <!-- Tentang deskripsi -->
+
+    <!-- <br /> -->
+
+    <!-- Tentang detail -->
+    <p id="detail" class="paragraf">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+      dignissimos corrupti temporibus in exercitationem ducimus facere nihil
+      similique. Quibusdam enim dolorem laudantium illo nulla maiores in
+      repellendus blanditiis. Nam, necessitatibus.
+    </p>
+    <!-- Tentang detail -->
+
+    <div class="box">
+      <h2 style="margin-left: 50px; border: 1px solid red">London</h2>
+      <p>London is the capital city of England.</p>
+      <p>London has over 13 million inhabitants.</p>
+    </div>
+
+    <h2>Judul 2</h2>
+    <h3>Judul 3</h3>
+    <h4>Judul 4</h4>
+    <h5>Judul 5</h5>
+    <h6>Judul 6</h6>
+
+    <img src="laptop.jpeg" alt="Laptop" height="100px" width="200px" />
+  </body>
+</html>
