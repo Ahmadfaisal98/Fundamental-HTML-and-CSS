@@ -16,6 +16,7 @@
   <style>
     body {
       background-color: rgb(190, 181, 181);
+      padding-bottom: 100px;
     }
     h1 {
       color: green;
@@ -49,6 +50,20 @@
 
     .box p {
       background-color: yellow;
+    }
+    .bg-red {
+      background-color: red;
+    }
+    .item {
+      border: 1px solid purple; text-align: center;
+    }
+    .gridArea {
+      display: grid;
+      grid-template-areas: 
+      'sec1 sec1 sec1 sec1'
+      'sec2 sec3 sec3 sec4'
+      'sec5 sec5 sec5 sec5'
+      ;
     }
   </style>
 
@@ -95,5 +110,82 @@
     <h6>Judul 6</h6>
 
     <img src="laptop.jpeg" alt="Laptop" height="100px" width="200px" />
+
+    <!-- DISPLAY -->
+    <!-- Default Display Block -->
+    <div class="bg-red" style="display: block;"> 
+      Block
+    </div>
+    <div class="bg-red" style="display: block;"> 
+      Block 2
+    </div>
+    <br>
+    <br>
+
+    <!-- Inline -->
+    <div class="bg-red" style="display: inline; width: 500px; height: 300px;">
+      Inline
+    </div>
+    
+    <!-- Inline block -->
+    <div class="bg-red" style="display: inline-block; width: 500px; height: 300px;">
+      Inline Block
+    </div>
+
+    <br>
+    <br>
+    <div class="bg-red" style="display: none;" >
+      None
+    </div>
+
+    <!-- Display Flex -->
+    <!-- Untuk menegahkan -->
+    <div class="bg-red" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100px;">
+      <div style="width: 50px; display: inline-block; height: 40px; background-color: green;">Flex 1</div>
+      <div style="background-color: yellow; display: inline-block; width: 50px;">Flex 2</div>
+    </div>
+    <!-- Flex center -->
+    <div style="display: flex; width: 150px; height: 300px; background-color: aquamarine; flex-direction: column; align-items: center; justify-content: center;">
+      <div>Item 1</div>
+      <div>Item 2</div>
+    </div>
+
+    <!-- Grid center -->
+    <div style="display: grid; width: 200px; height: 150px; background-color: azure; place-items: center;">
+      <div>Sample 1</div>
+      <div>Sample 2</div>
+    </div>
+    <br>
+    <br>
+    <!-- Untuk mengatur jaraknya sama -->
+    <div style="display: flex; gap: 20px; justify-content: end;">
+      <div>Text1</div>
+      <div>Text2</div>
+      <div>Text3</div>
+      <div>Text4</div>
+      <div>Text5</div>
+      <div>Text6</div>
+    </div>
+
+    <!-- Display grid -->
+    <!-- grid template columns/rows -->
+    <div style="display: grid; grid-template-columns: 1fr 2fr 1fr; background-color: aqua;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+    </div>
+
+    <!-- Grid template areas -->
+    <br>
+    <br>
+    <div class="gridArea">
+      <div class="item" style="grid-area: sec1;">Sec1</div>
+      <div class="item" style="grid-area: sec2;">Sec2</div>
+      <div class="item" style="grid-area: sec3;">Sec3</div>
+      <div class="item" style="grid-area: sec4;">Sec4</div>
+      <div class="item" style="grid-area: sec5;">Sec5</div>
+    </div>
   </body>
 </html>
