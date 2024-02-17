@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Sederhana</title>
+  <style> /* diatas body dalam head */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #calculator {
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 200px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="calculator">
+  <input type="text" id="display" value="">
+  <br>
+  <button onclick="appendToDisplay('1')">1</button>
+  <button onclick="appendToDisplay('2')">2</button>
+  <button onclick="appendToDisplay('3')">3</button>
+  <button onclick="appendToDisplay('+')">+</button>
+  <br>
+  <button onclick="appendToDisplay('4')">4</button>
+  <button onclick="appendToDisplay('5')">5</button>
+  <button onclick="appendToDisplay('6')">6</button>
+  <button onclick="appendToDisplay('-')">-</button>
+  <br>
+  <button onclick="appendToDisplay('7')">7</button>
+  <button onclick="appendToDisplay('8')">8</button>
+  <button onclick="appendToDisplay('9')">9</button>
+  <button onclick="appendToDisplay('*')">*</button>
+  <br>
+  <button onclick="appendToDisplay('0')">0</button>
+  <button onclick="clearDisplay()">C</button>
+  <button onclick="calculate()">=</button>
+  <button onclick="appendToDisplay('/')">/</button>
+</div>
+
+<script> // paling bawah
+  function appendToDisplay(value) {
+    document.getElementById('display').value += value;
+  }
+
+  function clearDisplay() {
+    document.getElementById('display').value = '';
+  }
+
+  function calculate() {
+    try {
+      document.getElementById('display').value = eval(document.getElementById('display').value);
+    } catch (error) {
+      document.getElementById('display').value = 'Error';
+    }
+  }
+
+  let result = '' // document.getElementById('display').value
+
+  function masukinKeDisplayTest(value) {
+    result += value // document.getElementById('display').value += value
+  }
+
+  function hapusDisplayTest() {
+    result = '';
+  }
+  function jumlahkan() {
+    try {
+      result = eval(result);
+    } catch (error) {
+      result = 'Error';
+    }
+  }
+
+
+  masukinKeDisplayTest('1') // click angka 1
+  console.log(result) // '1'
+  masukinKeDisplayTest('2') // click angka 2
+  console.log(result) // '12'
+
+  hapusDisplayTest() // click C
+  console.log(result) // ''
+
+  masukinKeDisplayTest('1') // click angka 1
+  console.log(result) // '1'
+  masukinKeDisplayTest('+') // click +
+  console.log(result) // '1+'
+  masukinKeDisplayTest('2') // click angka 2
+  console.log(result) // '1+2'
+
+  jumlahkan() // click =
+  console.log(result) // 3
+</script>
+
+</body>
+</html>
