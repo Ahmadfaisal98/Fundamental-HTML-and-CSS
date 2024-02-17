@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-info {
+  background-color: #11c82e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  color: #fff;
+  height: 50px;
+}
+
+.header-info h6 {
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.container-btn {
+  display: flex;
+  column-gap: 10px
+}
+
+.container-btn .discover-btn {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 100;
+  border: 0.5px solid #fff;
+  /*  1 -> semua */
+  /*  2 -> atas-bawah, kiri-kanan */
+  /*  3 -> atas, kiri-kanan, bawah */
+  /*  4 -> atas, kanan, bawah, kiri */
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.container-btn .start-now-btn {
+  background-color: #fff;
+  color: #11c82e;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 10px 20px;
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 30px;
+  height: 50px;
+}
+
+nav .nav-left {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-left .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.logo-container h3 {
+  font-size: 16px;
+}
+
+.list-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  
+}
+
+.list-menu li {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.material-symbols-outlined {
+  width: 16px;
+  font-size: 14px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right .login {
+  background-color: transparent;
+  font-size: 10px;
+  border: none;
+  margin-right: 10px;
+}
+
+.nav-right .free-trial {
+  background-color: #2386e6;
+  font-size: 10px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+/* SECTION */
+section {
+  background-color: #2386e6;
+  padding: 40px 0;
+}
+
+section h1, p {
+  text-align: center;
+  color: #fff;
+}
+
+section p {
+  font-size: 12px;
+  padding: 0 40px;
+  font-weight: 300;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.container-input {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 400px;
+  border: none;
+}
+
+.container-input input {
+  border-radius: 30px;
+  height: 40px;
+  width: 400px;
+  padding-left: 20px;
+}
+
+.container-input span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #11c82e;
+  color: #fff;
+  height: 25px;
+  border-radius: 20px;
+  font-size: 10px;
+  line-height: 2.3;
+  padding: 0 20px;
+  cursor: pointer;
+}
