@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>landing page</title>
+
+  <style>
+    /* Specificity (id-class-tag) */
+    /* #row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #row .blue {
+      color: blue;
+    }
+    .item
+    .blue {
+      color: blue;
+    }
+    .red {
+      color: red;
+    }
+    .item {
+      font-weight: 600;
+    }
+
+    span {
+      color: yellow !important;
+    } */
+
+    :root {
+      box-sizing: border-box;
+      --green: #669840;
+    }
+
+    body {
+      margin: 0;
+      color: var(--green);
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .align-center {
+      align-items: center;
+    }
+    .justify-center {
+      justify-content: center;
+    }
+
+    .space-between {
+      justify-content: space-between;
+    }
+
+    .gap-40 {
+      gap: 40px
+    }
+    .gap-10 {
+      gap: 10px
+    }
+    .gap-5 {
+      gap: 5px
+    }
+
+    .list-default {
+      list-style:none;
+    }
+
+    .bg-green {
+      background-color: var(--green);
+    }
+
+    .btn {
+      border-radius: 20px;
+      height: 40px;
+      padding: 0 15px;
+      font-size: 12px;
+      border: var(--green);
+    }
+
+    .section-item {
+      padding: 30px 0;
+    }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .text-green {
+      color: var(--green);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-white {
+      color: white;
+    }
+
+    .text-black {
+      color: black;
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mt-10 {
+      margin-top: 10px;;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <!-- <div id="row">
+    <div class="item green blue red">Text1</div>
+    <div class="item">Text2</div>
+    <div class="item">Text3</div>
+    <div class="item">Text4</div>
+    <div class="item">Text5</div>
+    <div class="item">Text6</div>
+    <span id="id-span" class="blue">span</span>
+  </div> -->
+
+  <header class="row align-center bg-green space-between text-white" style="padding: 5px 25px;">
+    <span>ICON</span>
+    <div class="list-menu">
+      <ul class="row list-default gap-10 align-center">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Packages</li>
+        <li>Clients</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <button class="gap-5 btn flex-center text-green">
+      <span>ICON</span>
+      <span>+62 1234 123</span>
+    </button>
+  </header>
+
+  <section class="section-item">
+    <div class="row justify-center gap-40">
+      <img src="https://www.jagoanhosting.com/blog/wp-content/uploads/2023/04/contoh-landing-page-usaha-laundr.png" alt="image-landing-page"
+      width="400">
+      <div style="width: 250px;">
+        <span class="flex-center">ICON</span>
+        <h5 class="flex-center">Professional Cleaning</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo optio eligendi tempore cum molestias, aspernatur accusamus? Dolorem explicabo reiciendis voluptate?
+        </p>
+        <div class="row space-between">
+          <div class="flex-column">
+            <span class="text-center">ICON</span>
+            <span class="text-center text-black">Client</span>
+            <span class="text-center text-black">5680</span>
+          </div>
+          <div class="flex-column">
+            <span class="text-center">ICON</span>
+            <span class="text-center text-black">Worker</span>
+            <span class="text-center text-black">5680</span>
+          </div>
+          <div class="flex-column">
+            <span class="text-center">ICON</span>
+            <span class="text-center text-black">Cleaning</span>
+            <span class="text-center text-black">15623</span>
+          </div>
+        </div>
+        <button class="btn mt-10 bg-green text-white">
+          Get to Know Us ->
+        </button>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
